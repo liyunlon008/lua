@@ -11,7 +11,7 @@
 ]]--
 
 if game.PlaceId == 1537690962 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/max0mind/lua/main/BSS/andromeda_bss.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/liyunlon008/lua/main/BSS/andromeda_bss.lua"))()
 elseif game.PlaceId == 9551640993 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/max0mind/lua/main/MS2/andromeda_ms2.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/liyunlon008/lua/main/MS2/andromeda_ms2.lua"))()
 end
