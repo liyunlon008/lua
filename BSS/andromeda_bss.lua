@@ -13,9 +13,9 @@
 
 
 -- API CALLS
-local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/max0mind/lua/main/API/andromeda_api.lua"))()
-local library = api.returncode("https://raw.githubusercontent.com/max0mind/lua/main/API/bracketv3.lua")
-local bssapi = api.returncode("https://raw.githubusercontent.com/max0mind/lua/main/BSS/bssapi.lua")
+local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/liyunlon008/lua/main/API/andromeda_api.lua"))()
+local library = api.returncode("https://raw.githubusercontent.com/liyunlon008/lua/main/API/bracketv3.lua")
+local bssapi = api.returncode("https://raw.githubusercontent.com/liyunlon008/lua/main/BSS/bssapi.lua")
 
 if not isfolder("andromeda") then makefolder("andromeda") end
 
