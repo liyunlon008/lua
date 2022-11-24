@@ -13,9 +13,9 @@
 
 
 -- API CALLS
-local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/liyunlon008/lua/main/API/andromeda_api.lua"))()
-local library = api.returncode("https://raw.githubusercontent.com/liyunlon008/lua/main/API/bracketv3.lua")
-local bssapi = api.returncode("https://raw.githubusercontent.com/liyunlon008/lua/main/BSS/bssapi.lua")
+local api = loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/liyunlon008/lua@main/API/andromeda_api.lua"))()
+local library = api.returncode("https://cdn.jsdelivr.net/gh/liyunlon008/lua@main/API/bracketv3.lua")
+local bssapi = api.returncode("https://cdn.jsdelivr.net/gh/liyunlon008/lua@main/BSS/bssapi.lua")
 
 if not isfolder("andromeda") then makefolder("andromeda") end
 
@@ -758,9 +758,9 @@ misco:CreateButton("导出统计表", function() local StatCache = require(game.
 
 
 local extras = extrtab:CreateSection("附加功能")
-extras:CreateButton("隐藏昵称", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/liyunlon008/lua/main/UTILITES/nicknamespoofer.lua"))()end)
-extras:CreateButton("解锁FPS上限", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/liyunlon008/lua/main/UTILITES/fpsboost.lua"))()end)
-extras:CreateButton("摧毁贴图", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/liyunlon008/lua/main/UTILITES/destroydecals.lua"))()end)
+extras:CreateButton("隐藏昵称", function() loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/liyunlon008/lua@main/UTILITES/nicknamespoofer.lua"))()end)
+extras:CreateButton("解锁FPS上限", function()loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/liyunlon008/lua@main/UTILITES/fpsboost.lua"))()end)
+extras:CreateButton("摧毁贴图", function()loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/liyunlon008/lua@main/UTILITES/destroydecals.lua"))()end)
 extras:CreateTextBox("滑翔机速度", "", true, function(Value) local StatCache = require(game.ReplicatedStorage.ClientStatCache) local stats = StatCache:Get() stats.EquippedParachute = "Glider" local module = require(game:GetService("ReplicatedStorage").Parachutes) local st = module.GetStat local glidersTable = getupvalues(st) glidersTable[1]["Glider"].Speed = Value setupvalue(st, st[1]'Glider', glidersTable) end)
 extras:CreateTextBox("滑翔机浮动", "", true, function(Value) local StatCache = require(game.ReplicatedStorage.ClientStatCache) local stats = StatCache:Get() stats.EquippedParachute = "Glider" local module = require(game:GetService("ReplicatedStorage").Parachutes) local st = module.GetStat local glidersTable = getupvalues(st) glidersTable[1]["Glider"].Float = Value setupvalue(st, st[1]'Glider', glidersTable) end)
 extras:CreateButton("隐形", function(State) api.teleport(CFrame.new(0,0,0)) wait(1) if game.Players.LocalPlayer.Character:FindFirstChild('LowerTorso') then Root = game.Players.LocalPlayer.Character.LowerTorso.Root:Clone() game.Players.LocalPlayer.Character.LowerTorso.Root:Destroy() Root.Parent = game.Players.LocalPlayer.Character.LowerTorso api.teleport(game:GetService("Players").LocalPlayer.SpawnPos.Value) end end)
