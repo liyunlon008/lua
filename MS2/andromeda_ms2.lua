@@ -10,8 +10,8 @@
 
 
 -- API CALLS
-local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/liyunlon008/lua/main/API/andromeda_api.lua"))()
-local library = api.returncode("https://raw.githubusercontent.com/liyunlon008/lua/main/API/bracketv3.lua")
+local api = loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/liyunlon008/lua@main/API/andromeda_api.lua"))()
+local library = api.returncode("https://cdn.jsdelivr.net/gh/liyunlon008/lua@main/API/bracketv3.lua")
 
 local temptable = {
     version = "1.0.0",
