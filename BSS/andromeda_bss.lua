@@ -374,6 +374,10 @@ function killmobs()
                     monsterpart = game:GetService("Workspace").Territories.WerewolfPlateau.w
                 elseif v.Name:match("Mushroom") then
                     monsterpart = game:GetService("Workspace").Territories.MushroomZone.Part
+		elseif andromeda.toggles.autokillmobs == false then
+                    break
+                elseif temptable.started.windy == true then
+                    break
                 else
                     monsterpart = v.Territory.Value
                 end
